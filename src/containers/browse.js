@@ -44,7 +44,7 @@ export function BrowseContainer({ slides }) {
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
 
-      <Header src="joker1" dontShowOnSmallViewPort>
+      <Header src="joker-grad" dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
             <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
@@ -92,7 +92,10 @@ export function BrowseContainer({ slides }) {
             he projects in a futile attempt to feel like he's part of the world
             around him.
           </Header.Text>
-          <Header.PlayButton>Play</Header.PlayButton>
+          <Player>
+            <Player.Button></Player.Button>
+            <Player.Video src="/videos/joker.mp4" />
+          </Player>
         </Header.Feature>
       </Header>
 
